@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is only a public chat using faye pub/sub protocol.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+Steps needed to start the application:
 
-* Database creation
 
-* Database initialization
+1. open command window in the directory of the project.
 
-* How to run the test suite
+2. run "bundle install".
 
-* Services (job queues, cache servers, search engines, etc.)
+3. run "rails s -p 3001" for intitializing the rails server on port no. 3001.
 
-* Deployment instructions
+4. open another command window in the directory of the project.
 
-* ...
+5. run "rackup faye.ru -E production -s thin" for intializing faye server.
